@@ -1,0 +1,70 @@
+@book{Brookshear1993,
+    author = "Brookshear, J.G. and Peake, E.M.",
+    title = "Teoría de la Computación: Lenguajes Formales, Autómatas y Complejidad",
+    publisher = "Addison-Wesley Iberoamericana España, S.A.",
+    year = "1993"
+}
+@book{Brown2004quimica,
+  author = {Brown, Theodore L. and otros},
+  title = {Química. La ciencia central},
+  publisher = {PEARSON EDUCACIÓN},
+  year = {2004},
+}
+
+@article{Hayashida2018,
+    author  = "Hayashida, Morihiro and Koyano, Hitoshi and Akutsu  Tatsuya",
+    title   = "Grammar-based Compression for Directed and Undirected Generalized Series-parallel Graphs using Integer Linear Programming",
+    year    = "2018",
+    journal = "In BIOINFORMATICS",
+    volume  = "",
+    number  = "",
+    pages   = "105--111"
+}
+
+@article{Matyszczak2019,
+    author  = "Matyszczak, Grzegorz",
+    title   = "Grammars of Organic Chemistry",
+    year    = "2019",
+    journal = "MATCH-COMMUNICATIONS IN MATHEMATICAL AND IN COMPUTER CHEMISTRY",
+    volume  = "82",
+    number  = "3",
+    pages   = "549--560"
+}
+
+@article{Qura-Tul-Ein2014,
+    author  = "Qura-Tul-Ein, Y and Naseem, Shahid and Ahmad, Fahad and Alyas, Tahir and Tabassum, Nadia",
+    title   = "DNA pattern analysis using finite automata",
+    year    = "2014",
+    journal = "International Research Journal of Computer Science (IRJCS)",
+    volume  = "1",
+    number  = "",
+    pages   = "1--4"
+}
+@article{Fumiyasu,
+    author  = "Sato, Fumiyasu and Fujiyoshi, Akio",
+    title   = "Recognition of Condensed Structural Formulas of Chemical Compounds Using a Formal Grammar",
+    year    = "",
+    journal = "",
+    volume  = "",
+    number  = "",
+    pages   = ""
+}
+
+@Webpage{Triplenlace,
+         url = "https://triplenlace.com/2019/07/18/todas-configuraciones-electronicas-experimentales-elementos-quimicos/",
+         author = "Triplenlace",
+         title = "Todas las configuraciones electrónicas experimentales de los elementos",
+         year = "2019",
+         lastchecked = "",
+         note = ""
+}
+
+@article{Yoshikawa2018,
+    author  = "Yoshikawa, Nakuri and Terayama, Kei and Sumita, Masato and Homma, Teruki and Oono, Kenta and Tsuda, Koji",
+    title   = "Population-based de novo molecule generation, using grammatical evolution",
+    year    = "2018",
+    journal = "Chemistry Letters",
+    volume  = "47",
+    number  = "11",
+    pages   = "1431--1434"
+}
