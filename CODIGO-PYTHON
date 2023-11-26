@@ -30,9 +30,9 @@ oraciones = input("Ingrese la estructura condensada: ").split("\n")
 for oracion in oraciones:
     cadena_aceptada = False
     for tree in analizador2.parse(oracion.split()):
-        print("Análisis de la estructura para demostrar su validez:")
+        print("Análisis de la estructura para comprobar si es válida:")
         print(tree, "\n")
         cadena_aceptada = True
-    
+
     if not cadena_aceptada:
         print("La cadena no es aceptada.")
