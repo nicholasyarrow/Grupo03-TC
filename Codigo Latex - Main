@@ -27,7 +27,7 @@
 
 % Portada
 \thispagestyle{empty}
-\title{\Large Autómata finito y gramática libre de contexto aplicada a los elementos químicos (configuración electrónica)}
+\title{\Large Autómata finito y gramática libre de contexto aplicada a los elementos químicos (Estructuras condensadas)}
 \author{Luyo Valverde Carlos Javier \\Rios Vito Daniela Paola \\Yarrow Larrauri Nicholas} % (autores separados, consultar al docente)
 % Manera oficial de colocar los autores:
 %\author{Autor(a) I, Autor(a) II, Autor(a) III, Autor(a) X}
@@ -54,11 +54,11 @@
 \noindent \maskCitet{}\\
 Los autómatas finitos son modelos computacionales que realizan procesos para entregar una salida tras recibir una entrada y está definido por un alfabeto, conjunto de estados finitos, transiciones, un estado inicial y un estado final. Por otro lado, las gramáticas libres de contexto es una gramática formal y resulta útil en diversas aplicaciones debido a que pueden describir características con estructuras recursivas.
 \\
-Ambos cuentan con múltiples aplicaciones que se encuentran habitualmente en nuestra vida cotidiana. Se aplica cuando se quiere conocer la ruta más corta a un destino, al jugar un videojuego, en la biología, redes de comunicación, etc. En este sentido, el presente trabajo relaciona los autómatas finitos y las gramáticas libres de contexto aplicada a los elementos químicos, específicamente, su configuración electrónica.
+Ambos cuentan con múltiples aplicaciones que se encuentran habitualmente en nuestra vida cotidiana. Se aplica cuando se quiere conocer la ruta más corta a un destino, al jugar un videojuego, en la biología, redes de comunicación, etc. En este sentido, el presente trabajo relaciona los autómatas finitos y las gramáticas libres de contexto aplicada a los compuestos químicos, específicamente, en su estructura condensada.
 \\
-En el campo de la química se encuentran los muy bien conocidos “elementos químicos” y cada uno de estos a su vez cuentan con sus respectivas configuraciones electrónicas únicas. Dicha configuración permite saber cómo están distribuidos los electrones de un átomo de un elemento alrededor del núcleo, de manera que se sabe los electrones que tienen los átomos en cada una de sus órbitas. Esto resulta imprescindible para hacer enlaces covalentes y enlaces iónicos, además conocer los electrones de valencia.
+En el campo de la química se encuentran los muy bien conocidos “compuestos químicos”, cada uno de los cuales pueden estar presentadas con distintas formulas estructuras. Entre estas encontramos a las fórmulas condensadas, semidesarrolladas y desarrolladas. Para el presente proyecto se hará uso de la fórmula condensada o también conocida como molecular que indica la proporción de átomos de un compuesto. 
 \\
-En este proyecto no se pretende abarcar profundamente cómo se establecen estas configuraciones electrónicas. Lo que se busca es hacer más fácil y práctico para un estudiante de química, o cualquier otra persona interesada, conocer qué elemento está relacionado con determinada configuración, o mejor dicho, a qué elemento le pertenece una configuración requerida. Adicionalmente, brindar su configuración simplificada, la cual se da apuntando al gas noble anterior más cercano al elemento y después se agregan las capas finales del átomo.
+En este proyecto no se pretende abarcar profundamente cómo se establecen las estructuras condensadas, por lo que se obtendrán los datos de fuentes externas. Lo que se busca es hacer más fácil y práctico para un estudiante de química, o cualquier otra persona interesada, conocer y analizar un compuesto químico a través de su fórmula condensada y corroborar que los enlaces se hayan realizado correctamente.
 
 \newpage
 
@@ -124,51 +124,11 @@ Donde:
 \end{itemize}
 Con esta GLC, se pueden generar cadenas como 'aabb', 'aaabbb', 'ab', 'aabbb', etc., que consisten en secuencias de 'a's seguidas de secuencias de 'b'
 
-\subsection{\textbf{Configuración Electrónica}}
-La configuración electrónica es la forma de distribuir el número de electrones  correspondientes a un elemento químico en distintos niveles y sub-niveles de energía alrededor de su núcleo atómico \cite{Brown2004quimica}. Los electrones se organizan en capas o niveles de energía, y dentro de cada nivel, hay subniveles que pueden contener un número máximo de electrones.
-Los electrones llenan los diferentes niveles de energía en un orden creciente de energía, iniciando desde el nivel más cercano al núcleo del átomo. Para que un nivel sea llenado, primero deben completarse los subniveles correspondientes, siguiendo la misma jerarquía.
-\begin{table}
-\caption{Niveles y Subniveles de Energía en la Configuración Electrónica.}
-    \centering
-    \begin{threeparttable}
-        \begin{tabular}{@{}cccc@{}}
-            \toprule
-            \textbf{Nivel de Energía} & \textbf{Subniveles} & \textbf{Máxima Cantidad de Electrones} \\ \midrule
-            K                         & s                   & 2                                      \\
-            L                         & s, p                & 8                                      \\
-            M                         & s, p, d             & 18                                     \\
-            N                         & s, p, d, f          & 32                                     \\
-            O                         & s, p, d, f          & 32                                     \\
-            P                         & s, p, d             & 18                                     \\
-            Q                         & s, p                & 8                                  \\ \bottomrule
-        \end{tabular}
-    \end{threeparttable}
-\end{table}
-\newpage
+\subsection{\textbf{Estructuras condensadas}}
+Una estructura condensada es una forma abreviada de representar la fórmula química de un compuesto. En el contexto de la química orgánica, una estructura condensada consiste en una secuencia de caracteres que representa la disposición de los átomos en una molécula de una manera más compacta que la fórmula estructural completa. Un ejemplo es  la secuencia ?C?H=C?H?H que representa una estructura condensada en la que el caracter H indica la conexión con la parte principal de la fórmula estructural, C  y H representan los átomos de carbono e hidrógeno respectivamente, = indica un enlace doble, y ? se utiliza para indicar un tipo de enlace desconocido. Esta representación condensada proporciona información sobre la composición y la conectividad de los átomos en la molécula de una manera más simplificada. \\
+Las estructuras condensadas definen la sintaxis de una cadena desplegada y está en forma de una gramática libre de contexto para facilitar su manejo. El símbolo de inicio es "SS". A0, A1, A2, A3, A4, A5 y A6 son símbolos no terminales, y las cadenas de caracteres encerradas entre comillas dobles, como "H", "Tos", "?", "=", "(", y ")", son símbolos terminales.
 
-Para entender mejor la configuración electrónica, consideremos los siguientes ejemplos:
-    \subsection*{Ejemplo 1: Configuración Electrónica del Carbono (C, número atómico 6}
-
-    La configuración electrónica del carbono es 1s² 2s² 2p². Esto significa que tiene:
-    \begin{itemize}
-    \item Nivel de Energía K: $1s^2$ (2 electrones)
-    \item Nivel de Energía L: $2s^2$ (2 electrones) y $2p^2$ (2 electrones)
-    \end{itemize}
-    Esto indica que el carbono tiene 6 electrones distribuidos en sus niveles y subniveles de energía.
-    
-        \subsection*{Ejemplo 2: Configuración Electrónica del Oxígeno (O, número atómico 8)}
-    
-    La configuración electrónica del oxígeno es $1s^2 2s^2 2p^4.$ Esto significa que tiene:
-    \begin{itemize}
-    \item Nivel de Energía K: $1s^2$ (2 electrones)
-    \item Nivel de Energía L: $2s^2$ (2 electrones) y $2p^4$ (4 electrones)
-    \end{itemize}
-    Esto indica que el oxígeno tiene 8 electrones distribuidos en sus niveles y subniveles de energía.
-    
-
-
-
-
+Algunas reglas gramaticales se definen según la valencia de cada átomo. La valencia de un átomo es el número de enlaces que puede compartir con otros átomos, a menudo llamado \textbf{el número de manos} de un átomo. Un subíndice de un símbolo no terminal representa el número de manos disponibles para unirse a otros átomos. Por ejemplo, el número de manos del hidrógeno H es uno, y existe la regla A1 → "H\\
 
 \newpage
 
@@ -194,122 +154,73 @@ Se aborda el problema de encontrar reglas de generación a partir de datos biol�
 \section{\large Metodología}
 \noindent \maskCitet{}\\
 
+\subsection{\textbf{Objetivos}}
+\noindent \maskCitet{}\\
+\subsection{Objetivo principal} 
+El objetivo principal de este estudio es desarrollar un marco teórico y computacional que integre conceptos de autómatas finitos, y la programación de gramáticas libres de contexto para analizar estructuras condensadas. El enfoque se centrará en facilitar la interpretación y relación entre estos elementos.
+\subsection{Objetivos secundarios}
+\begin{itemize}
+\item Definir reglas gramaticales específicas para las estructuras condensadas.
+\item Desarrollar un programa de gramáticas aplicadas a las fórmulas moleculares en Python.
+\item Validar la sintaxis de las estructuras condensadas.
+\end{itemize}
+
 \subsection{\textbf{Diseño del estudio}}
-En este proyecto se relacionarán los autómatas finitos y las gramáticas libres de contexto aplicadas a los elementos químicos, específicamente, su configuración electrónica. Para ello, se diseñará un programa que permita al usuario ingresar una configuración electrónica y obtener el elemento químico correspondiente, así como su configuración simplificada. Los datos de las configuraciones electrónicas pueden encontrarse en la web, en muchas páginas; se seleccionará la que permita entender su contenido sin complejidades y se verificará que la información sea verídica comparándola con otras fuentes. Los datos serán representados a través de un autómata finito, mientras que se usará la gramática libre de contexto para la programación. El programa se desarrollará en Python, utilizando la librería PLY para el análisis sintáctico de la gramática libre de contexto, lo que permitirá una implementación eficiente y precisa.
+
+La metodología de investigación se sustentará en una exhaustiva revisión de la literatura académica, libros de referencia y recursos en línea de reconocida confiabilidad. Para ello, se emplearán herramientas de búsqueda académica de vanguardia y se accederá a bases de datos especializadas en informática y teoría de la computación, permitiendo así un análisis completo y actualizado de los avances en los campos pertinentes. \\
+ El enfoque será teórico, centrándose en la comprensión conceptual y la aplicación práctica de autómatas finitos y gramáticas libres de contexto.
 
 
 \subsection{\textbf{Recopilación de datos}}
-Los datos necesarios para este proyecto serán las configuraciones electrónicas de los elementos químicos, las cuales se pueden encontrar en diversas fuentes, como libros de química, sitios web especializados y bases de datos. Se utilizará la tabla periódica de los elementos como referencia para la obtención de las configuraciones electrónicas. Se utilizará como guía para verificar y complementar la información recopilada de otras fuentes. Esto asegurará que las configuraciones electrónicas utilizadas en el programa estén respaldadas por una base sólida de conocimiento químico establecido.
+Los datos necesarios para el estudio se recopilarán a través de la revisión de literatura académica, libros de referencia, y recursos en línea confiables. Se prestará especial atención a fuentes como libros de texto de teoría de la computación, artículos académicos y sitios web de instituciones educativas reconocidas.
 \\
-Revisando las diversas fuentes en Internet, se propuso hacer uso de la página \cite{Triplenlace}, donde se presenta de manera clara, ordenada y concisa todas las configuraciones, además de agregar un video explicativo sobre cómo se establecen.
+Revisando las diversas fuentes en Internet, se propuso hacer uso de la página \cite{Fumiyasu}, donde se presenta de manera clara, ordenada y concisa la explicacion de las estructuras condensadas.
 
 
 \subsection{\textbf{Análisis de datos}}
-El análisis de datos se realizará mediante el uso de autómatas finitos y gramáticas libres de contexto. Se utilizará un autómata finito para validar la sintaxis de la configuración electrónica ingresada por el usuario, y una gramática libre de contexto para obtener el elemento químico correspondiente y su configuración simplificada. El programa mostrará al usuario el  el elemento químico asociado a la configuración electrónica ingresada, junto con su configuración simplificada y permitirá realizar nuevos ingresos de cadenas,lo que brindará a los usuarios la flexibilidad para explorar diferentes configuraciones electrónicas y sus correspondientes elementos químicos.
+Los datos recopilados se analizarán mediante la identificación de patrones, ejemplos y aplicaciones prácticas de autómatas finitos y gramáticas libres de contexto. Se prestará especial atención a la comprensión de la relación entre estos conceptos y su relevancia en la teoría de la computación y la informática.
 \\
-A continuación se presentan las configuraciones electrónicas de los 23 primeros elementos. Se selecciona sólo una muestra para representar cómo se analizan los datos y no hacer muy extenso el desarrollo, pero el proceso es el mismo para todos los elementos:
-
-\begin{table}[hbt!]
-\begin{center}
-\caption{Configuraciones electrónicas de los 23 primeros elementos}
-\begin{tabular}{cccll}
-\hline
-Número & Símbolo & Elemento & Configuración & Configuración simplificada\\ 
-\hline
-1 & H & Hidrógeno & 1s^1 & 1s^1 \\ 
-2 & He & Helio &  1s^2 & 1s^2\\ 
-3 & Li & Litio &  1s^2 2s^1 & [He] 2s^1\\
-4 & Be & Berilio &  1s^2 2s^2 & [He] 2s^1\\
-5 & B & Boro &  1s^2 2s^2 2p^1 & [He] 2s^2 2p^1\\
-6 & C & Carbono &  1s^2 2s^2 2p^2 & [He] 2s^2 2p^2\\
-7 & N & Nitrógeno &  1s^2 2s^2 2p^3 & [He] 2s^2 2p^3\\
-8 & O & Oxígeno &  1s^2 2s^2 2p^4 & [He] 2s^2 2p^4\\
-9 & F & Flúor &  1s^2 2s^2 2p^5 & [He] 2s^2 2p^5\\
-10 & Ne & Neón &  1s^2 2s^2 2p^6 & [He] 2s^2 2p^6\\
-11 & Na & Sodio &  1s^2 2s^2 2p^6 3s^1 & [Ne] 3s^1\\
-\hline
-\end{tabular}
-\label{tab:elementos}
-\end{center}
-\end{table}
-
-\begin{table}[hbt!]
-\begin{center}
-\begin{tabular}{cccll}
-\hline
-Número & Símbolo & Elemento & Configuración & Configuración simplificada\\ 
-\hline
-12 & Mg & Magnesio & 1s^2 2s^2 2p^6 3s^2 & [Ne] 3s^2 \\ 
-13 & Al & Aluminio &  1s^2 2s^2 2p^6 3s^2 3p^1 & [Ne] 3s^2 3p^1\\ 
-14 & Si & Silicio & 1s^2 2s^2 2p^6 3s^2 3p^2 & [Ne] 3s^2 3p^2\\
-15 & P & Fósforo &  1s^2 2s^2 2p^6 3s^2 3p^3 & [Ne] 3s^2 3p^3\\
-16 & S & Azufre &  1s^2 2s^2 2p^6 3s^2 3p^4 & [Ne] 3s^2 3p^4\\
-17 & Cl & Cloro &  1s^2 2s^2 2p^6 3s^2 3p^5 & [Ne] 3s^2 3p^5\\
-18 & Ar & Argón &  1s^2 2s^2 2p^6 3s^2 3p^6 & [Ne] 3s^2 3p^6\\
-19 & K & Potasio &  1s^2 2s^2 2p^6 3s^2 3p^6 4s^1 & [Ar] 4s^1\\
-20 & Ca & Calcio &  1s^2 2s2 2p^6 3s^2 3p^6 4s^2 & [Ar]  4s^2\\
-21 & Sc & Escandio &  1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^1 & [Ar]  4s^2 3d^1\\
-22 & Ti & Titanio &  1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^2 & [Ar]  4s^2 3d^2\\
-23 & V & Vanadio &  1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^3 & [Ar]  4s^2 3d^3\\
-\hline
-\end{tabular}
-\end{center}
-\end{table}
-Lo anterior se puede representar con un autómata finito, el cual se muestra posteriormente. Para el autómata sólo se realiza su presentación gráfica y se considera la misma cantidad de elementos del Cuadro \ref{tab:elementos}. El procedimiento para los demás elementos faltantes es el mismo.\\
-En el autómata, S simboliza únicamente el estado inicial a partir del cúal se analizará si al ingresar una cadena se evalúa en q1 o q2. Asimismo, q1 representa al primer elemento (Hidrógeno), q2 al segundo elemento (Helio), y así consecutivamente hasta q23 que simboliza al elemento número 23 (Vanadio).
+A continuación se presenta una tabla de como se arma una estructura condensada paso por paso.
 
 \begin{figure}[h]
-\caption{Autómata finito de los 23 primeros elementos}
+\caption{Reconocimiento de fórmulas estructurales condensadas}
 \centering
-\includegraphics[width=0.7\textwidth]{Automata 23 elementos.png}
+\includegraphics[width=1.0\textwidth]{Formulas estructuras condensadas.JPG}
 \end{figure}
-\\
 \newpage
-A partir de ello, se consideran los 30 primeros elementos para construir la gramática descrita por: (para los demás elementos se sigue el mismo procedimiento)
-\\
-\begin{tabbing}
-S ->  H | He | Li | Be | B | C | N | O | F | Ne | Na | Mg | Al | Si | P | S | Cl | Ar |  \\
-K | Ca | Sc | Ti | V | Cr | Mn | Fe | Co | Ni | Cu | Zn \\
-\end{tabbing}
-
-\begin{tabbing}
-\hspace*{8cm} \= \hspace*{8cm} \kill
-
-Zn -> Ar 4s^2 3d^1^0  \> P -> Ne 3s^2 3p^3\\
-Cu -> Ar 4s^1 3d^1^0  \> Si -> Ne 3s^2 3p^2\\
-Ni -> Ar 4s^2 3d^8 \> Al -> Ne 3s^2 3p^1\\
-Co -> Ar 4s^2 3d^7 \> Mg -> Ne 3s^2\\
-Fe -> Ar 4s^2 3d^6 \> Na -> Ne 3s^1\\
-Mn -> Ar 4s^2 3d^5 \> Ne -> He 2s^2 2p^6\\
-Cr -> Ar 4s^1 3d^5 \> F -> He 2s^2 2p^5\\
-V -> Ar 4s^2 3d^3 \> O -> He 2s^2 2p^4\\
-Ti -> Ar 4s^2 3d^2 \> N -> He 2s^2 2p^3\\
-Sc -> Ar 4s^2 3d^1 \> C -> He 2s^2 2p^2\\
-Ca -> Ar 4s^2 \> B -> He 2s^2 2p^1\\
-K -> Ar 4s^1 \> Be -> He 2s^2\\
-Ar -> Ne 3s^2 3p^6 \> Li -> He 2s^1\\
-Cl -> Ne 3s^2 3p^5 \> He -> 1s^2\\
-S -> Ne 3s^2 3p^4 \> H -> 1s^1\\
-\end{tabbing}
-
-\\
-Después de obtener la gramática libre de contexto se procede a la implementación del sistema, con el cual se podrá completar el cumplimiento de los objetivos planteados.
-
+Para entender mejor las estructuras condensadas, consideremos el siguiente ejemplo:
+    \subsection*{Ejemplo 1: Formula estructural del hidrógeno}
+    \includegraphics[width=1.0\textwidth]{Formula Estructural.JPG}
+    El ejemplo de la cadena desplegada "*?C?H=C?H?H" se analiza utilizando la gramática, generando una secuencia de producciones que derivan la cadena dada desde el símbolo de inicio "SS". Se muestra un árbol de análisis (parse tree) y la fórmula estructural completa correspondiente.
 \newpage
 
-\section{\large Objetivos}
+\section{\large Resultados}
 \noindent \maskCitet{}\\
-
-\subsection{Objetivo General} 
-Aplicar autómatas finitos y gramáticas libres de contexto para identificar un elemento químico a través de su configuración electrónica.
-\subsection{Objetivos Específicos}
+Para la programación en Phyton, primero se importa el módulo "nltk". Luego se define una cadena de texto para guardar la gramática: \\
+\includegraphics[width=0.8\textwidth]{1.png}
+\\ Se crea un analizador y se establecen funciones para solicitar ingresar una estructura condensada. Seguidamente se analiza si la cadena cumple la gramática definida, si es así se muestran los recorridos; caso contrario, se muestra un mensaje de "cadena no aceptada".\\
+\includegraphics[width=0.8\textwidth]{2.png}
+\\Para ingresar los datos, la fórmula condensada debe ser desplegada previamente y separada con ?. Por ejemplo, para la sustancia Etano se ingresa: C ? C ? H ? H ? H ? H ? H ? H. Si la cadena es aceptada, se muestra su análisis como en la siguiente imagen: \\
+\includegraphics[width=0.8\textwidth]{aceptada.png}
+\\ Por otro lado, si no se reconoce la estructura condensada, se muestra el mensaje "la cadena no es aceptada": \\
+\includegraphics[width=0.8\textwidth]{no_aceptada.png}
+\\ 
+\newpage
+\section{\large Conclusiones}
+\noindent \maskCitet{}\\
 \begin{itemize}
-\item Usar autómatas finitos para representar la configuración electrónica de un elemento químico.
-\item Emplear gramáticas libres de contexto a un elemento y conocer su configuración simplificada.
-\item Programar gramáticas aplicadas a elementos químicos.
+\item \textbf{Integración de conceptos teóricos y aplicaciones prácticas:} El trabajo logra integrar de manera eficaz conceptos teóricos fundamentales de la teoría de la computación mencionados en el marco teórico, con aplicaciones prácticas en el análisis de estructuras condensadas de diversos compuestos químicos. La combinación de los conceptos permite desarrollar una herramienta eficaz para la validación y análisis de estructuras condensadas, con potencial impacto en la simplificación y comprensión de fórmulas moleculares, especialmente para estudiantes de química.
+
+\item \textbf{Aplicación a la Química:} La elección de aplicar los conceptos teóricos a la representación de compuestos químicos mediante estructuras condensadas es relevante y tiene un impacto potencial en la simplificación y comprensión de fórmulas moleculares. Las estructuras condensadas son un tipo de representación de fórmulas moleculares que utilizan símbolos y abreviaturas para representar los elementos y grupos funcionales de un compuesto químico. La simplificación de las fórmulas moleculares mediante estructuras condensadas puede facilitar su comprensión, especialmente para estudiantes de química que están aprendiendo los conceptos básicos de la química orgánica.
+
+\item \textbf{Desarrollo de un programa funcional:} La implementación en Python demuestra la viabilidad de utilizar autómatas finitos y gramáticas libres de contexto para validar y analizar estructuras condensadas. La programación permite la interacción y verificación de la sintaxis de las fórmulas moleculares, lo que facilita la detección de errores y la corrección de los mismos.
+
+\item \textbf{Validación de estructuras condensadas:} La capacidad del programa para validar si una cadena cumple con la gramática definida proporciona una herramienta útil para verificar la corrección sintáctica de las estructuras condensadas de compuestos químicos. La validación sintáctica es un paso importante en el análisis de estructuras condensadas, ya que garantiza que las fórmulas moleculares sean correctas y estén bien formadas.
+
 \end{itemize}
 
 \newpage
+
 % Referencias
 \renewcommand\refname{\large\textbf{Referencias}}
 \bibliography{mibibliografia}
