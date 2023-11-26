@@ -50,6 +50,24 @@
 % Cuerpo
 \pagenumbering{arabic}
 
+\section{\large Resumen}
+\noindent \maskCitet{}\\
+Los autómatas finitos son modelos abstractos utilizados en informática y teoría de la computación para describir el comportamiento de sistemas en términos de procesamiento de símbolos. La definición formal de un autómata finito incluye un conjunto finito de estados (Q), un conjunto finito de símbolos de entrada ('\textit{sigma}'), una función de transición (\textit{'delta'}) que determina cómo el autómata cambia de estado dado un símbolo de entrada, un estado inicial (q0), y un conjunto de estados finales (F).
+\\
+Las Gramáticas Libres de Contexto (GLC) son esenciales en la teoría de la computación y se utilizan para describir lenguajes formales. Una GLC se representa por una tupla que incluye un conjunto finito de variables no terminales (V), un conjunto finito de símbolos terminales o el alfabeto del lenguaje ('\textit{sigma}'), un conjunto finito de reglas de producción (P) que especifica cómo combinar los símbolos para formar cadenas válidas, y un símbolo inicial (S).
+\\
+Las estructuras condensadas son una forma abreviada de representar fórmulas químicas, especialmente en química orgánica. Se utilizan secuencias de caracteres para representar la disposición de átomos en una molécula de manera más compacta que la fórmula estructural completa. Estas estructuras siguen una gramática libre de contexto que define la sintaxis de las cadenas desplegadas.
+\\
+El estudio propuesto tiene como objetivo principal desarrollar un marco teórico y computacional que integre conceptos de autómatas finitos y gramáticas libres de contexto para analizar estructuras condensadas. Los objetivos secundarios incluyen definir reglas gramaticales específicas, desarrollar un programa en Python y validar la sintaxis de las estructuras condensadas. La metodología se basará en una revisión exhaustiva de la literatura académica, con la recopilación y análisis de datos a través de fuentes confiables. El enfoque será teórico, centrándose en la comprensión conceptual y la aplicación práctica de los conceptos mencionados.
+\newpage
+
+\section{\large Agradecimiento}
+\noindent \maskCitet{}\\
+A nuestro grupo nos gustaría expresar nuestro más sincero agradecimiento al Profesor Roberto Rodriguez por su apoyo y orientación excepcionales a lo largo de la realización de este trabajo durante el ciclo. Su experiencia y conocimiento nos han enriquecido enormemente a nuestra comprensión y habilidades en esta área. Además, su disposición para responder a nuestras preguntas, su paciencia y su compromiso con el crecimiento tanto académico como personal son dignos de elogio. Siempre se mostró dispuesto a discutir ideas y proporcionar una perspectiva diferente.  
+\\
+Nos sentimos afortunados de aprender y crecer bajo la tutela de nuestro profesor Roberto Rodriguez. Este trabajo no habría sido posible sin su influencia positiva, y estamos profundamente agradecidos por su contribución a nuestra formación académica. Gracias, profesor por su generosidad y apoyo constante.
+\newpage
+
 \section{\large Introducción}
 \noindent \maskCitet{}\\
 Los autómatas finitos son modelos computacionales que realizan procesos para entregar una salida tras recibir una entrada y está definido por un alfabeto, conjunto de estados finitos, transiciones, un estado inicial y un estado final. Por otro lado, las gramáticas libres de contexto es una gramática formal y resulta útil en diversas aplicaciones debido a que pueden describir características con estructuras recursivas.
@@ -156,9 +174,9 @@ Se aborda el problema de encontrar reglas de generación a partir de datos biol�
 
 \subsection{\textbf{Objetivos}}
 \noindent \maskCitet{}\\
-\subsection{Objetivo principal} 
+\subsection{\textit{Objetivo principal}} 
 El objetivo principal de este estudio es desarrollar un marco teórico y computacional que integre conceptos de autómatas finitos, y la programación de gramáticas libres de contexto para analizar estructuras condensadas. El enfoque se centrará en facilitar la interpretación y relación entre estos elementos.
-\subsection{Objetivos secundarios}
+\subsection{\textit{Objetivos secundarios}}
 \begin{itemize}
 \item Definir reglas gramaticales específicas para las estructuras condensadas.
 \item Desarrollar un programa de gramáticas aplicadas a las fórmulas moleculares en Python.
